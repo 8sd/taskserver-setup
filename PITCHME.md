@@ -1,4 +1,4 @@
-# Taskserver Setup
+to use them# Taskserver Setup
 
 This guide leads you through all the necessary steps to setup your own Taskserver to sync your Taskwarrior-tasks.
 
@@ -815,9 +815,9 @@ $ cp ca.cert.pem         ~/.task
 Now we need to make Taskwarrior aware of these certs:
 
 ```bash
-$ task config taskd.certificate  - ~/.task/first_last.cert.pem
-$ task config taskd.key         - ~/.task/first_last.key.pem
-$ task config taskd.ca          - ~/.task/ca.cert.pem
+$ task config taskd.certificate  ~/.task/first_last.cert.pem
+$ task config taskd.key         ~/.task/first_last.key.pem
+$ task config taskd.ca          ~/.task/ca.cert.pem
 ```
 
 +++
